@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="../reset.css ">
+        <link rel="stylesheet" href="../CSS/productosycontacto.css">
+
+    </head>
+
+    <body>
+        <header>
+
+            <div class="caja"> 
+                <h1> <img src="../logo.png "></h1> <!--lo hacemos asi
+                    para destacar el logo-->
+        
+                    <nav> 
+                        <ul >
+                            <li><a href ="barberia.html" >Home </a></li> <!--a href
+                            hace referencia a que hay un link que dirige a otra pagina interna
+                        o externa ej google, se pondria http://www.google.com-->
+                            <li><a href ="productos.html">Productos</a> </li>
+                            <li><a href ="contacto.html"> Contacto</a></li>
+            
+                        </ul>
+        
+                    </nav>
+
+            </div>                
+
+        </header>
+
+        <main>
+            <form> <!--label e input siempre van juntos para el formulario-->
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required
+               >
+                <!--required hace referencia a que el campo es obligatorio llenarlo por 
+                    parte del usuario. 
+                El placeholder, es una guia para el usuario de como debe llenar el fomrulario-->
+
+                <label for="correo"> Correo Electrónico</label>
+                <input type="email" id ="correo" class="input-padron" required
+                placeholder="email@dominio.com">
+
+                <label for="telefono"> Teléfono</label>
+                <input type="tel" id ="telefono" class="input-padron" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required> </textarea>
+
+              <fieldset> <!--esto es parecido al div, solo que fieldset indica
+            que todo lo que este dentro de aca, hace referencia a la misma informacion
+        cuando ocupamos fielsdet, no ponemos la etiqueta p, para referenciar un texto, sino
+    que poenemos legend-->
+                <legend>¿ Como le gustaría que le contactemos ?</legend>               
+
+                <label for="radio-email"> <input type ="radio" name="contacto" value="email" id="radio-email">Email 	
+                    &#128233;</label> <!-- name contacto, lo que nos permite
+                hacer es que solo se selecicone una opcione y no todas, indica que todos los
+            elementos forman parte del mismo grupo-->
+                
+                <label for="radio-telefono"> <input type ="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono 	
+                    &#128241;</label>
+                
+                <label for="radio-whatsapp"> <input type ="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                
+              </fieldset> 
+
+              <div> 
+                <p>¿ En cual horario prediere ser atendido ?</p>
+                <select > <!--nos muestra un menu desplegable-->
+                  <option> Mañana</option>
+                  <option> Tarde</option>
+                  <option>Noche</option>
+  
+  
+                </select>
+
+
+              </div>
+          
+              
+              <!--checked queda seleccionado por defecto, el usuario puede seleccionar otra opcion en el caso
+            de que hayan mas de 1 opcion, o deseleccionarla en el caso de que solo haya una opcion-->
+              <label class="checkbox"> <input type="checkbox"  checked>¿ Le gustaría recibir novedades de la Barbería ? </label>
+
+                <input type="submit" value="Enviar Formulario" class="enviar"> 
+
+
+            </form>
+
+            <table> <!--para la creacion de tablas siempre va tr y 
+                td. TR filas TD celdas-->
+                <thead> <!--encabezado de una tabla-->
+                    <tr>
+                        <th>Día</th> <!--th es la celda del encabezado-->
+                        <th>horario</th>
+                    </tr>
+                 </thead>
+
+                 <tbody> <!--cuerpo de la tabla -->
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td> 9h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td> 8h - 18h</td>
+                    </tr>
+    
+
+
+                 </tbody>
+                
+               
+            </table>
+
+
+        </main>
+
+   
+        <footer> <!--pie de pagina-->
+            <img src="../logo-blanco.png" alt="logo barberia alura">
+            <p class="copyright"> &copy Copyright Barberia Alura -2023</p>
+
+        </footer>
+    </body>
+
+</html>     

@@ -1,0 +1,64 @@
+body {
+   
+}
+
+.tituloPrincipal{
+
+    padding-left: 30px;
+}
+
+#banner { /*usamos # porque estamos llamando a un id*/
+    width: 100%; /* width modifica la anchura*/
+
+}
+
+
+.principal {
+    background: #CCCCCC;
+    padding: 20px;
+
+
+}
+
+
+p {
+    text-align: center;
+}
+
+em strong{
+    color:aqua;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+.diferenciales {
+    background: #ffffff;
+    padding: 30px;
+
+}
+
+.tituloCentralizado {
+    text-align: center;
+
+}
+
+.items { /*usamos . antes de items, porque estamos lamando a una clase*/
+    font-style: italic;
+
+}
+
+ul {
+    display: inline-block; /*esto hace referencia a que solo
+    ocupe el espacio de las listas, y lo que esta abajo de este codigo
+    que en este caso es la imagen, pueda quedar al lado  */
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+
+.imagenDiferencial{
+    width: 50%;
+}

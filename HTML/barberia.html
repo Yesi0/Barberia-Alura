@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="es"> 
+    
+ <head> <!--esa es una etiqueta de informacion-->
+    <meta charset="UTF-8"> <!--Diccionario de palabras, para que reconozca todos
+    los acentos y caracteres especiales-->
+    <meta name="viewport" content="width=device-wodth"> <!--esto para indicar
+    que el se use y adapte la web a los diferentes dispositivos moviles-->
+    <title> Barbería Alura</title>
+    <link rel="stylesheet" href="../reset.css ">
+    <link rel="stylesheet" href="../CSS/productosycontacto.css"> <!--con esto indicamos
+    que llamamos a la carpeta css, en la hoja barberia.css-->
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+</head>
+
+<body> <!--esta es una etiqueta donde va el contenido-->
+   
+    <header>
+
+        <div class="caja"> 
+            <h1> <img src="../logo.png "></h1> <!--lo hacemos asi
+                para destacar el logo-->
+    
+                <nav> 
+                    <ul >
+                        <li><a href ="barberia.html" >Home </a></li> <!--a href
+                        hace referencia a que hay un link que dirige a otra pagina interna
+                    o externa ej google, se pondria http://www.google.com-->
+                        <li><a href ="productos.html">Productos</a> </li>
+                        <li><a href ="contacto.html"> Contacto</a></li>
+        
+                    </ul>
+    
+                </nav>
+
+        </div>                
+
+    </header>
+
+    <img class ="banner" src ="../banner.jpg">
+    <main>
+       <!--<p>Parrafo de ejemplo</p> --> 
+        <section class="principal"> <!--el div se usa para
+            crear bloques de contenido-->
+        
+        
+                <h2 class="titulo-principal"> Sobre la Barbería Alura </h2>
+                <img class ="utensilios" src="../utensilios[1].jpg" alt="utensilios de un barbero.">
+                
+                <p> Ubicada en el corazón de la ciudad, la <strong> Barbería Alura </strong>trae para el mercado lo que hay de mejor para su cabello y barba. 
+                Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+            
+                <p id="mision"> <em> Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes". </strong></em></p>
+                    <!--el id hace referencia para ponerle un nombre corto
+                    a algo que despues llamaremos en css para darle diseño-->
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la
+                moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y
+                agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+        
+                </section>
+
+                <section class="mapa">
+                    <h3 class="titulo-principal"> Nuestra ubicacion </h3>
+                    <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+
+                    <div class="mapa-contenido"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.645298235908!2d-70.60877418999338!3d-33.562591003150516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d0b17d6e6a89%3A0xa073b6613d9ec4dd!2sSan%20Patricio%2011439%2C%208310887%20Santiago%2C%20La%20Florida%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1682906914206!5m2!1ses!2scl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                    </div>     
+
+                </section>
+        
+                <section class ="diferenciales"> 
+        
+                    <h3 class="titulo-principal">Diferenciales</h3>
+
+                    <div class="contenido-diferenciales">
+                        
+                         <ul class="lista-diferenciales"> <!--lista ordenada-->
+                        <!-- li indica quna lista-->
+                            <li class="items"> Atencion personalizada a los clientes</li>
+                            <li class="items">Espacio diferenciado </li>
+                            <li class="items">Localización </li>
+                            <li class="items">Puntualidad </li>
+                            <li class="items">Limpieza </li>                    
+                </ul><img src="../diferenciales.jpg" class ="imagenDiferencial"> <!--Aqui tiene que ir el termino de ul junto con el inicio de la imagen para que la imagen quede al lado derecho de la lista escrita mas arriba-->
+                    
+                        
+                    </div>
+                    <div class="video"> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QmtPlbxB7rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+                    </div>
+        
+        
+        
+            </section>
+
+      
+            
+
+
+    </main>
+
+   
+        <footer> <!--pie de pagina-->
+            <img src="../logo-blanco.png" alt="logo barberia alura">
+            <p class="copyright"> &copy Copyright Barberia Alura -2023</p>
+
+        </footer>     
+
+    </body>
+</html>
